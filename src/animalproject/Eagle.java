@@ -9,6 +9,6 @@ package animalproject;
  *
  * @author agendron
  */
-public class Eagle {
+public class Eagle extends Bird {
     
 }

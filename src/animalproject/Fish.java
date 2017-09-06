@@ -10,5 +10,5 @@ package animalproject;
  * @author agendron
  */
 public class Fish {
-    
+    String isSaltWater;
 }

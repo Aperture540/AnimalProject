@@ -10,5 +10,5 @@ package animalproject;
  * @author agendron
  */
 public class Mammal {
-    
+    String bodyTemp;
 }

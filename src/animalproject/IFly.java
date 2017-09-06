@@ -10,5 +10,5 @@ package animalproject;
  * @author agendron
  */
 public interface IFly {
-    
+    void fly();
 }

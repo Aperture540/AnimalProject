@@ -10,5 +10,8 @@ package animalproject;
  * @author agendron
  */
 public class Bird {
+    public Bird() {
+       String Wingspan; 
+    }
     
 }
