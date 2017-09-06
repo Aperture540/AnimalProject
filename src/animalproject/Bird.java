@@ -11,7 +11,8 @@ package animalproject;
  */
 public class Bird {
     public Bird() {
-       String Wingspan; 
+       int Wingspan; 
     }
+    
     
 }
