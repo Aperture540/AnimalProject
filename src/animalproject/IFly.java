@@ -9,9 +9,6 @@ package animalproject;
  *
  * @author agendron
  */
-public interface AnimalStuff {
-    void IFly();
-    void IWalk();
-    void ISwim();
-    void IMakeSound();
+public interface IFly {
+    
 }
