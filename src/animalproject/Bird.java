@@ -9,10 +9,8 @@ package animalproject;
  *
  * @author agendron
  */
-public class Bird {
+public class Bird extends Animal {
     public Bird() {
-       int Wingspan; 
+        int Wingspan; 
     }
-    
-    
 }

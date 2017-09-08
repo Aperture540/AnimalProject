@@ -16,16 +16,15 @@ public class Animal implements IFly, IWalk, ISwim, IMakeSound {
     {
         System.out.println("");
     }
-    
 
     @Override
     public void fly() {
-        System.out.println("");
+        System.out.println("I can fly.");
     }
 
     @Override
     public void walk() {
-        System.out.println("");
+        System.out.println("I can walk.");
     }
 
     @Override

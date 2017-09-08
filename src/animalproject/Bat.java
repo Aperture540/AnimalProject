@@ -9,8 +9,6 @@ package animalproject;
  *
  * @author agendron
  */
-public class Fish extends Animal {
-    public Fish() {
-        String isSaltWater;
-    }
+public class Bat extends Mammal implements IFly, IWalk, IMakeSound {
+    
 }

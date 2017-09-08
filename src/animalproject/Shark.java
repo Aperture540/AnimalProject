@@ -9,6 +9,6 @@ package animalproject;
  *
  * @author agendron
  */
-public class Shark {
+public class Shark extends Fish implements ISwim, IMakeSound {
     
 }

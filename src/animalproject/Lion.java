@@ -9,17 +9,16 @@ package animalproject;
  *
  * @author agendron
  */
-public class FlyingFish extends Fish implements ISwim, IFly, IMakeSound {
-    
+public class Lion extends Mammal implements IWalk, ISwim, IMakeSound {
     public void name()
     {
-        System.out.println("Rover");
+        System.out.println("Tiny");
     }
 
     @Override
-    public void fly()
+    public void walk()
     {
-        System.out.println("I can fly.");
+        System.out.println("I can walk.");
     }
 
     @Override
@@ -31,6 +30,7 @@ public class FlyingFish extends Fish implements ISwim, IFly, IMakeSound {
     @Override
     public void makeSound()
     {
-        System.out.println("\"Splash\"");
+        System.out.println("\"Scream\"");
     }
+    
 }
