@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author agendron
  */
-public class Fish extends Animal {
+public abstract class Fish extends Animal {
     /*public Fish() {
         String isSaltWater;
     }*/

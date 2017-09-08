@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author agendron
  */
-public class Mammal extends Animal {
+public abstract class Mammal extends Animal {
     public Mammal() {
         int bodyTemp; 
     }
