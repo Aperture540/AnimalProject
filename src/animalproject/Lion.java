@@ -32,5 +32,4 @@ public class Lion extends Mammal implements IWalk, ISwim, IMakeSound {
     {
         System.out.println("\"Scream\"");
     }
-    
 }

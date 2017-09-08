@@ -19,10 +19,13 @@ public class AnimalProject {
     public static void main(String[] args) {
         
         Lion lionMammal = new Lion();
+        Ostrich ostrichBird = new Ostrich();
+        
         ArrayList<Animal> animals = new ArrayList<>();
         animals.add(lionMammal);
         
         ArrayList<IFly> flyers = new ArrayList<>();
+        flyers.add(ostrichBird);
         
         
     }
