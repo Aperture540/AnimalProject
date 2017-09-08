@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author agendron
  */
-public class Animal implements IFly, IWalk, ISwim, IMakeSound {
+public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound {
     String name;
     //public void name();
     public void name()

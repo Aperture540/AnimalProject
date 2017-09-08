@@ -10,7 +10,8 @@ package animalproject;
  * @author agendron
  */
 public class Fish extends Animal {
-    public Fish() {
+    /*public Fish() {
         String isSaltWater;
-    }
+    }*/
+    public boolean isSaltWater;
 }
