@@ -29,12 +29,12 @@ public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound {
 
     @Override
     public void swim() {
-        System.out.println("");
+        System.out.println("I can swim.");
     }
 
     @Override
     public void makeSound() {
-        System.out.println("");
+        System.out.println("I can make sounds.");
     }
     
 }
