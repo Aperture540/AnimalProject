@@ -19,15 +19,29 @@ public class AnimalProject {
     public static void main(String[] args) {
         
         Lion lionMammal = new Lion();
-        Ostrich ostrichBird = new Ostrich();
+        Eagle eagleBird = new Eagle();
         
-        ArrayList<Animal> animals = new ArrayList<>();
-        animals.add(lionMammal);
+        ArrayList<Animal> myAnimals = new ArrayList<>();
+        myAnimals.add(lionMammal);
+        myAnimals.add(eagleBird);
         
         ArrayList<IFly> flyers = new ArrayList<>();
-        flyers.add(ostrichBird);
+        flyers.add(eagleBird);
         
+        for(Animal animal: myAnimals)
+        {
+            animal.name();
+            animal.fly();
+            animal.walk();
+            animal.swim();
+            animal.makeSound();
+            System.out.println("---------------");
+        }
         
+        for(IFly flyingAnimals: flyers)
+        {
+            
+        }
         
         
     }

@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author agendron
  */
-public class FlyingFish extends Fish implements ISwim, IFly, IMakeSound {
+public class FlyingFish extends Fish implements IFly, ISwim, IMakeSound {
     
     public void name()
     {
