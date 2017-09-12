@@ -9,10 +9,18 @@ package animalproject;
  *
  * @author agendron
  */
-public class Dolphin extends Mammal implements ISwim, IMakeSound {
+public class Dolphin extends Mammal implements ISwim, IMakeSound 
+{
     public void name()
     {
         System.out.println("Sheldon");
+    }
+    
+    @Override
+    public boolean isSaltWater()
+    {
+        System.out.println("I live in salt water.");
+        return true;
     }
 
     @Override

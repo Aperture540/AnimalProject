@@ -9,22 +9,25 @@ package animalproject;
  *
  * @author agendron
  */
-public class FlyingFish extends Fish implements IFly, ISwim, IMakeSound {
+public class FlyingFish extends Fish implements IFly, ISwim, IMakeSound 
+{
     
     public void name()
     {
         System.out.println("Rover");
-    }
-    
-    public void isSaltWater()
-    {
-    
     }
 
     @Override
     public void fly()
     {
         System.out.println("I can fly.");
+    }
+    
+    @Override
+    public boolean isSaltWater()
+    {
+        System.out.println("I live in salt water.");
+        return true;
     }
 
     @Override

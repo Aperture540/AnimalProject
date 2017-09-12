@@ -9,6 +9,34 @@ package animalproject;
  *
  * @author agendron
  */
-public class Bass extends Fish implements ISwim, IMakeSound {
+public class Bass extends Fish implements ISwim, IMakeSound 
+{
+        public void name()
+    {
+        System.out.println("Larry");
+    }
     
+    /*@Override
+    public void fly()
+    {
+        System.out.println("I can fly.");
+    }*/
+
+    /*@Override
+    public void walk()
+    {
+        System.out.println("I can walk.");
+    }*/
+
+    @Override
+    public void swim()
+    {
+        System.out.println("I can swim.");
+    }
+
+    @Override
+    public void makeSound()
+    {
+        System.out.println("\"Bubble noises\"");
+    }
 }

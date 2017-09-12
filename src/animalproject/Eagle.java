@@ -9,7 +9,8 @@ package animalproject;
  *
  * @author agendron
  */
-public class Eagle extends Bird implements IFly, IWalk, IMakeSound {
+public class Eagle extends Bird implements IFly, IWalk, IMakeSound 
+{
     public void name()
     {
         System.out.println("Egbert");

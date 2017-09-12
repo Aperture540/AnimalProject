@@ -9,6 +9,7 @@ package animalproject;
  *
  * @author agendron
  */
-public interface ISwim {
+public interface ISwim 
+{
     void swim();
 }

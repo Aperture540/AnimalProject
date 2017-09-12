@@ -9,8 +9,10 @@ package animalproject;
  *
  * @author agendron
  */
-public abstract class Mammal extends Animal {
-    public Mammal() {
-        int bodyTemp; 
+public abstract class Mammal extends Animal 
+{
+    public Mammal() 
+    {
+        double bodyTemp; 
     }
 }

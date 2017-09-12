@@ -9,8 +9,10 @@ package animalproject;
  *
  * @author agendron
  */
-public abstract class Bird extends Animal {
-    public Bird() {
-        int Wingspan; 
+public abstract class Bird extends Animal 
+{
+    public Bird() 
+    {
+        double wingspan; 
     }
 }

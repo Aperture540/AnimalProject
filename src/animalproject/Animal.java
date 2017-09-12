@@ -9,7 +9,8 @@ package animalproject;
  *
  * @author agendron
  */
-public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound {
+public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound 
+{
     String name;
     //public void name();
     public void name()
@@ -17,24 +18,48 @@ public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound {
         System.out.println("");
     }
 
+    public String getName() 
+    {
+        return name;
+    }
+
+    public void setName(String name) 
+    {
+        this.name = name;
+    }
+
     @Override
-    public void fly() {
+    public String toString() 
+    {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public void fly() 
+    {
         //System.out.println("I can fly.");
     }
 
     @Override
-    public void walk() {
+    public void walk() 
+    {
         //System.out.println("I can walk.");
+    }
+    
+    public boolean isSaltWater()
+    {
+        return true;
     }
 
     @Override
-    public void swim() {
+    public void swim() 
+    {
         //System.out.println("I can swim.");
     }
 
     @Override
-    public void makeSound() {
+    public void makeSound() 
+    {
         //System.out.println("I can make sounds.");
     }
-    
 }

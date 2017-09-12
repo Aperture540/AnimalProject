@@ -9,7 +9,8 @@ package animalproject;
  *
  * @author agendron
  */
-public class Bat extends Mammal implements IFly, IWalk, IMakeSound {
+public class Bat extends Mammal implements IFly, IWalk, IMakeSound 
+{
     public void name()
     {
         System.out.println("Esteban Holio");

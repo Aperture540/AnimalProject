@@ -9,6 +9,7 @@ package animalproject;
  *
  * @author agendron
  */
-public interface IFly {
-   void fly();
+public interface IFly 
+{
+    void fly();
 }

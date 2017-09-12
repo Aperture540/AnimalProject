@@ -9,7 +9,8 @@ package animalproject;
  *
  * @author agendron
  */
-public class Lion extends Mammal implements IWalk, ISwim, IMakeSound {
+public class Lion extends Mammal implements IWalk, ISwim, IMakeSound 
+{
     public void name()
     {
         System.out.println("Tiny");

@@ -9,6 +9,7 @@ package animalproject;
  *
  * @author agendron
  */
-public interface IMakeSound {
+public interface IMakeSound 
+{
     void makeSound();
 }

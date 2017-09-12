@@ -9,9 +9,16 @@ package animalproject;
  *
  * @author agendron
  */
-public abstract class Fish extends Animal {
+public abstract class Fish extends Animal 
+{
     /*public Fish() {
         String isSaltWater;
     }*/
-    public boolean isSaltWater;
+    boolean isSaltWater;
+
+    @Override
+    public boolean isSaltWater() 
+    {
+    return super.isSaltWater(); //To change body of generated methods, choose Tools | Templates.
+    }
 }

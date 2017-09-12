@@ -9,8 +9,9 @@ package animalproject;
  *
  * @author agendron
  */
-public class Ostrich extends Bird implements IWalk, IMakeSound {
-        public void name()
+public class Ostrich extends Bird implements IWalk, IMakeSound 
+{
+    public void name()
     {
         System.out.println("Bob");
     }
@@ -30,6 +31,6 @@ public class Ostrich extends Bird implements IWalk, IMakeSound {
     @Override
     public void makeSound()
     {
-        System.out.println("\"Beep\"");
+        System.out.println("\"Bark\"");
     }
 }

@@ -9,6 +9,7 @@ package animalproject;
  *
  * @author agendron
  */
-public interface IWalk {
+public interface IWalk 
+{
     void walk();
 }
