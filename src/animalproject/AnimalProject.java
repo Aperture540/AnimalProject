@@ -108,6 +108,26 @@ public class AnimalProject
             System.out.println("-----------------");
         }
         
+        ArrayList<Animal> myFlyers = new ArrayList<>();
+        myFlyers.add(eagleBird);
+        myFlyers.add(flyingFishFish);
+        myFlyers.add(batMammal);
+        
+        System.out.println("\n--**--Flyer List--**--");
+        
+        for(Animal flyerAnimals: myFlyers)
+        {
+            flyerAnimals.name();
+            flyerAnimals.fly();
+            flyerAnimals.wingspan();
+            flyerAnimals.walk();
+            flyerAnimals.isSaltWater();
+            flyerAnimals.bodyTemp();
+            flyerAnimals.swim();
+            flyerAnimals.makeSound();
+            System.out.println("-----------------");            
+        }
+        
         
         
         
