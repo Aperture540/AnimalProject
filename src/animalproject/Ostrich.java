@@ -13,7 +13,7 @@ public class Ostrich extends Bird implements IWalk, IMakeSound
 {
     public void name()
     {
-        System.out.println("Bob");
+        System.out.println("William Robertson");
     }
     
     @Override
