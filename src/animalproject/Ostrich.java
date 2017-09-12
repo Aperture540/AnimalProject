@@ -15,6 +15,13 @@ public class Ostrich extends Bird implements IWalk, IMakeSound
     {
         System.out.println("Bob");
     }
+    
+    @Override
+    public double wingspan()
+    {
+        System.out.println("My wingspan is " + 6.6 + " feet.");
+        return 6.6;
+    }
 
     @Override
     public void walk()

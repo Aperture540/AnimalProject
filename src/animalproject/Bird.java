@@ -11,8 +11,16 @@ package animalproject;
  */
 public abstract class Bird extends Animal 
 {
-    public Bird() 
+    /*public Bird() 
     {
         double wingspan; 
+    }*/
+    
+    double wingspan;
+    
+    @Override
+    public double wingspan() 
+    {
+    return super.wingspan(); //To change body of generated methods, choose Tools | Templates.
     }
 }

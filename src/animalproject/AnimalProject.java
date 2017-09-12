@@ -40,23 +40,55 @@ public class AnimalProject
         myAnimals.add(lionMammal);
         myAnimals.add(batMammal);
         
-        ArrayList<IFly> myFlyers = new ArrayList<>();
-        myFlyers.add(eagleBird);
+        System.out.println("--**--Animal List--**--");
         
         for(Animal animal: myAnimals)
         {
             animal.name();
             animal.fly();
+            animal.wingspan();
             animal.walk();
             animal.isSaltWater();
+            animal.bodyTemp();
             animal.swim();
             animal.makeSound();
             System.out.println("-----------------");
         }
         
-        for(IFly flyers: myFlyers)
+        ArrayList<Animal> myBirds = new ArrayList<>();
+        myBirds.add(ostrichBird);
+        myBirds.add(penguinBird);
+        myBirds.add(eagleBird);
+        
+        System.out.println("\n--**--Bird List--**--");
+        
+        for(Animal birdAnimals: myBirds)
         {
-            
+            birdAnimals.name();
+            birdAnimals.fly();
+            birdAnimals.wingspan();
+            birdAnimals.walk();
+            birdAnimals.swim();
+            birdAnimals.makeSound();
+            System.out.println("-----------------");
+        }
+        
+        ArrayList<Animal> myMammals = new ArrayList<>();
+        myMammals.add(dolphinMammal);
+        myMammals.add(lionMammal);
+        myMammals.add(batMammal);
+        
+        System.out.println("\n--**--Mammal List--**--");
+        
+        for(Animal mammalAnimals: myMammals)
+        {
+            mammalAnimals.name();
+            mammalAnimals.fly();
+            mammalAnimals.walk();
+            mammalAnimals.bodyTemp();
+            mammalAnimals.swim();
+            mammalAnimals.makeSound();
+            System.out.println("-----------------");            
         }
         
         

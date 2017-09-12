@@ -13,13 +13,20 @@ public class Bat extends Mammal implements IFly, IWalk, IMakeSound
 {
     public void name()
     {
-        System.out.println("Esteban Holio");
+        System.out.println("Esteban Julio Ricardo Montoya De La Rosa Ramirez");
     }
 
     @Override
     public void fly()
     {
         System.out.println("I can fly.");
+    }
+    
+    @Override
+    public double bodyTemp()
+    {
+        System.out.println("My body temperature is " + 39.5 + " degrees fahrenheit.");
+        return 39.5;
     }
 
     @Override

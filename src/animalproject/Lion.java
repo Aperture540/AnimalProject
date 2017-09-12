@@ -21,6 +21,13 @@ public class Lion extends Mammal implements IWalk, ISwim, IMakeSound
     {
         System.out.println("I can walk.");
     }
+    
+    @Override
+    public double bodyTemp()
+    {
+        System.out.println("My body temperature is " + 101.5 + " degrees fahrenheit.");
+        return 101.5;
+    }
 
     @Override
     public void swim()

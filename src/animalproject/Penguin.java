@@ -21,6 +21,13 @@ public class Penguin extends Bird implements IWalk, ISwim, IMakeSound
     {
         System.out.println("I can fly.");
     }*/
+    
+    @Override
+    public double wingspan()
+    {
+        System.out.println("My wingspan is " + 2.5 + " feet.");
+        return 2.5;
+    }
 
     @Override
     public void walk()

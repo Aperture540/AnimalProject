@@ -11,8 +11,16 @@ package animalproject;
  */
 public abstract class Mammal extends Animal 
 {
-    public Mammal() 
+    /*public Mammal() 
     {
         double bodyTemp; 
+    }*/
+    
+    double bodyTemp;
+    
+    @Override
+    public double bodyTemp() 
+    {
+    return super.bodyTemp(); //To change body of generated methods, choose Tools | Templates.
     }
 }

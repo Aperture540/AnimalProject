@@ -21,6 +21,13 @@ public class Eagle extends Bird implements IFly, IWalk, IMakeSound
     {
         System.out.println("I can fly.");
     }
+    
+    @Override
+    public double wingspan()
+    {
+        System.out.println("My wingspan is " + 7.3 + " feet.");
+        return 7.3;
+    }
 
     @Override
     public void walk()

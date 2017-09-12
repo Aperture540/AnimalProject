@@ -12,7 +12,9 @@ package animalproject;
 public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound 
 {
     String name;
-    //public void name();
+    double wingspan;
+    double bodyTemp;
+
     public void name()
     {
         System.out.println("");
@@ -39,6 +41,11 @@ public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound
     {
         //System.out.println("I can fly.");
     }
+    
+    public double wingspan()
+    {
+        return wingspan;
+    }
 
     @Override
     public void walk() 
@@ -49,6 +56,11 @@ public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound
     public boolean isSaltWater()
     {
         return true;
+    }
+    
+    public double bodyTemp()
+    {
+        return bodyTemp;
     }
 
     @Override

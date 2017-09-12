@@ -17,6 +17,13 @@ public class Dolphin extends Mammal implements ISwim, IMakeSound
     }
     
     @Override
+    public double bodyTemp()
+    {
+        System.out.println("My body temperature is " + 97.7 + " degrees fahrenheit.");
+        return 97.7;
+    }
+    
+    @Override
     public boolean isSaltWater()
     {
         System.out.println("I live in salt water.");
