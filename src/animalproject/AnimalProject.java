@@ -91,6 +91,25 @@ public class AnimalProject
             System.out.println("-----------------");            
         }
         
+        ArrayList<Animal> myFish = new ArrayList<>();
+        myFish.add(sharkFish);
+        myFish.add(bassFish);
+        myFish.add(flyingFishFish);
+        
+        System.out.println("\n--**--Fish List--**--");
+        
+        for(Animal fishAnimals: myFish)
+        {
+            fishAnimals.name();
+            fishAnimals.fly();
+            fishAnimals.isSaltWater();
+            fishAnimals.swim();
+            fishAnimals.makeSound();
+            System.out.println("-----------------");
+        }
+        
+        
+        
         
     }
     
