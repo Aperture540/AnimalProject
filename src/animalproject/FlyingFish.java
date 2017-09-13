@@ -11,6 +11,7 @@ package animalproject;
  */
 public class FlyingFish extends Fish implements IFly, ISwim, IMakeSound 
 {
+    private boolean isSaltWater;
     
     public void name()
     {
@@ -22,18 +23,29 @@ public class FlyingFish extends Fish implements IFly, ISwim, IMakeSound
     {
         System.out.println("I can fly.");
     }
-    
-    @Override
-    public boolean isSaltWater()
-    {
-        System.out.println("I live in salt water.");
-        return true;
-    }
 
     @Override
     public void swim()
     {
         System.out.println("I can swim.");
+    }
+    
+    public FlyingFish (boolean isSaltWater)
+    {
+        this.isSaltWater = isSaltWater;
+    }
+
+    public boolean isSaltWater()
+    {
+        if(isSaltWater)
+        {
+            System.out.println("I live in salt water.");
+        }
+        else
+        {
+            System.out.println("I live in fresh water.");
+        }
+        return isSaltWater;
     }
 
     @Override

@@ -11,16 +11,22 @@ package animalproject;
  */
 public class Ostrich extends Bird implements IWalk, IMakeSound 
 {
+    private double wingspan;
+    
     public void name()
     {
         System.out.println("William Robertson");
     }
     
-    @Override
+    public Ostrich (double wingspan)
+    {
+        this.wingspan = wingspan;
+    }
+    
     public double wingspan()
     {
-        System.out.println("My wingspan is " + 6.6 + " feet.");
-        return 6.6;
+        System.out.println("My wingspan is " + wingspan + " feet.");
+        return wingspan;
     }
 
     @Override
@@ -28,12 +34,6 @@ public class Ostrich extends Bird implements IWalk, IMakeSound
     {
         System.out.println("I can walk.");
     }
-
-    /*@Override
-    public void swim()
-    {
-        System.out.println("I can't swim.");
-    }*/
 
     @Override
     public void makeSound()

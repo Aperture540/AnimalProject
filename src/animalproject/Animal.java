@@ -13,6 +13,7 @@ public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound
 {
     String name;
     double wingspan;
+    boolean isSaltWater;
     double bodyTemp;
 
     public void name()
@@ -55,7 +56,7 @@ public abstract class Animal implements IFly, IWalk, ISwim, IMakeSound
     
     public boolean isSaltWater()
     {
-        return true;
+        return isSaltWater;
     }
     
     public double bodyTemp()

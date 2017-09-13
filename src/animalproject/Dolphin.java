@@ -11,23 +11,22 @@ package animalproject;
  */
 public class Dolphin extends Mammal implements ISwim, IMakeSound 
 {
+    private double bodyTemp;
+    
     public void name()
     {
         System.out.println("Sheldon");
     }
     
-    @Override
-    public double bodyTemp()
+    public Dolphin (double bodyTemp)
     {
-        System.out.println("My body temperature is " + 97.7 + " degrees fahrenheit.");
-        return 97.7;
+        this.bodyTemp = bodyTemp;
     }
     
-    @Override
-    public boolean isSaltWater()
+    public double bodyTemp()
     {
-        System.out.println("I live in salt water.");
-        return true;
+        System.out.println("My body temperature is " + bodyTemp + " degrees fahrenheit.");
+        return bodyTemp;
     }
 
     @Override

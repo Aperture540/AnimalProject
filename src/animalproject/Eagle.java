@@ -11,9 +11,22 @@ package animalproject;
  */
 public class Eagle extends Bird implements IFly, IWalk, IMakeSound 
 {
+    private double wingspan;
+    
     public void name()
     {
         System.out.println("Egbert");
+    }
+    
+    public Eagle (double wingspan)
+    {
+        this.wingspan = wingspan;
+    }
+    
+    public double wingspan()
+    {
+        System.out.println("My wingspan is " + wingspan + " feet.");
+        return wingspan;
     }
     
     @Override
@@ -21,25 +34,12 @@ public class Eagle extends Bird implements IFly, IWalk, IMakeSound
     {
         System.out.println("I can fly.");
     }
-    
-    @Override
-    public double wingspan()
-    {
-        System.out.println("My wingspan is " + 7.3 + " feet.");
-        return 7.3;
-    }
 
     @Override
     public void walk()
     {
         System.out.println("I can walk.");
     }
-
-    /*@Override
-    public void swim()
-    {
-        System.out.println("I can't swim.");
-    }*/
 
     @Override
     public void makeSound()

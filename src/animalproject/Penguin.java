@@ -11,22 +11,22 @@ package animalproject;
  */
 public class Penguin extends Bird implements IWalk, ISwim, IMakeSound
 {
+    private double wingspan;
+    
     public void name()
     {
         System.out.println("Lenny");
     }
     
-    /*@Override
-    public void fly()
+    public Penguin (double wingspan)
     {
-        System.out.println("I can fly.");
-    }*/
+        this.wingspan = wingspan;
+    }
     
-    @Override
     public double wingspan()
     {
-        System.out.println("My wingspan is " + 2.5 + " feet.");
-        return 2.5;
+        System.out.println("My wingspan is " + wingspan + " feet.");
+        return wingspan;
     }
 
     @Override

@@ -11,28 +11,11 @@ package animalproject;
  */
 public class Shark extends Fish implements ISwim, IMakeSound 
 {
+    private boolean isSaltWater;
+    
     public void name()
     {
         System.out.println("Bruce");
-    }
-    
-    /*@Override
-    public void fly()
-    {
-        System.out.println("I can fly.");
-    }*/
-
-    /*@Override
-    public void walk()
-    {
-        System.out.println("I can walk.");
-    }*/
-    
-    @Override
-    public boolean isSaltWater()
-    {
-        System.out.println("I live in salt water.");
-        return true;
     }
         
     @Override
@@ -40,10 +23,28 @@ public class Shark extends Fish implements ISwim, IMakeSound
     {
         System.out.println("I can swim.");
     }
+    
+    public Shark (boolean isSaltWater)
+    {
+        this.isSaltWater = isSaltWater;
+    }
+
+    public boolean isSaltWater()
+    {
+        if(isSaltWater)
+        {
+            System.out.println("I live in salt water.");
+        }
+        else
+        {
+            System.out.println("I live in fresh water.");
+        }
+        return isSaltWater;
+    }
 
     @Override
     public void makeSound()
     {
         System.out.println("\"Chomp\"");
-    }    
+    }
 }

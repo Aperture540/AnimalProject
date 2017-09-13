@@ -13,21 +13,17 @@ import java.util.ArrayList;
  */
 public class AnimalProject 
 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) 
     {
-        Ostrich ostrichBird = new Ostrich();
-        Penguin penguinBird = new Penguin();
-        Eagle eagleBird = new Eagle();
-        Shark sharkFish = new Shark();
-        Bass bassFish = new Bass();
-        FlyingFish flyingFishFish = new FlyingFish();
-        Dolphin dolphinMammal = new Dolphin();
-        Lion lionMammal = new Lion();
-        Bat batMammal = new Bat();
+        Ostrich ostrichBird = new Ostrich(6.6);
+        Penguin penguinBird = new Penguin(2.5);
+        Eagle eagleBird = new Eagle(7.3);
+        Shark sharkFish = new Shark(true);
+        Bass bassFish = new Bass(false);
+        FlyingFish flyingFishFish = new FlyingFish(true);
+        Dolphin dolphinMammal = new Dolphin(97.7);
+        Lion lionMammal = new Lion(101.5);
+        Bat batMammal = new Bat(39.5);
         
         ArrayList<Animal> myAnimals = new ArrayList<>();
         myAnimals.add(ostrichBird);
@@ -52,7 +48,7 @@ public class AnimalProject
             animal.bodyTemp();
             animal.swim();
             animal.makeSound();
-            System.out.println("-----------------");
+            System.out.println("\n");
         }
         
         ArrayList<Animal> myBirds = new ArrayList<>();
@@ -70,7 +66,7 @@ public class AnimalProject
             birdAnimals.walk();
             birdAnimals.swim();
             birdAnimals.makeSound();
-            System.out.println("-----------------");
+            System.out.println("\n");
         }
         
         ArrayList<Animal> myMammals = new ArrayList<>();
@@ -88,7 +84,7 @@ public class AnimalProject
             mammalAnimals.bodyTemp();
             mammalAnimals.swim();
             mammalAnimals.makeSound();
-            System.out.println("-----------------");            
+            System.out.println("\n");            
         }
         
         ArrayList<Animal> myFish = new ArrayList<>();
@@ -105,7 +101,7 @@ public class AnimalProject
             fishAnimals.isSaltWater();
             fishAnimals.swim();
             fishAnimals.makeSound();
-            System.out.println("-----------------");
+            System.out.println("\n");
         }
         
         ArrayList<Animal> myFlyers = new ArrayList<>();
@@ -125,12 +121,77 @@ public class AnimalProject
             flyerAnimals.bodyTemp();
             flyerAnimals.swim();
             flyerAnimals.makeSound();
-            System.out.println("-----------------");            
+            System.out.println("\n");            
         }
         
+        ArrayList<Animal> myWalkers = new ArrayList<>();
+        myWalkers.add(ostrichBird);
+        myWalkers.add(penguinBird);
+        myWalkers.add(eagleBird);
+        myWalkers.add(lionMammal);
+        myWalkers.add(batMammal);
         
+        System.out.println("\n--**--Walker List--**--");
         
+        for(Animal walkerAnimals: myWalkers)
+        {
+            walkerAnimals.name();
+            walkerAnimals.fly();
+            walkerAnimals.wingspan();
+            walkerAnimals.walk();
+            walkerAnimals.bodyTemp();
+            walkerAnimals.swim();
+            walkerAnimals.makeSound();
+            System.out.println("\n"); 
+        }
         
+        ArrayList<Animal> mySwimmers = new ArrayList<>();
+        mySwimmers.add(penguinBird);
+        mySwimmers.add(sharkFish);
+        mySwimmers.add(bassFish);
+        mySwimmers.add(flyingFishFish);
+        mySwimmers.add(dolphinMammal);
+        mySwimmers.add(lionMammal);
+        
+        System.out.println("\n--**--Swimmer List--**--");
+        
+        for(Animal swimmerAnimals: mySwimmers)
+        {
+            swimmerAnimals.name();
+            swimmerAnimals.fly();
+            swimmerAnimals.wingspan();
+            swimmerAnimals.walk();
+            swimmerAnimals.isSaltWater();
+            swimmerAnimals.bodyTemp();
+            swimmerAnimals.swim();
+            swimmerAnimals.makeSound();
+            System.out.println("\n");    
+        }
+        
+        ArrayList<Animal> mySoundMakers = new ArrayList<>();
+        mySoundMakers.add(ostrichBird);
+        mySoundMakers.add(penguinBird);
+        mySoundMakers.add(eagleBird);
+        mySoundMakers.add(sharkFish);
+        mySoundMakers.add(bassFish);
+        mySoundMakers.add(flyingFishFish);
+        mySoundMakers.add(dolphinMammal);
+        mySoundMakers.add(lionMammal);
+        mySoundMakers.add(batMammal);
+        
+        System.out.println("\n--**--Sound Makers List--**--");
+        
+        for(Animal soundMakerAnimals: mySoundMakers)
+        {
+            soundMakerAnimals.name();
+            soundMakerAnimals.fly();
+            soundMakerAnimals.wingspan();
+            soundMakerAnimals.walk();
+            soundMakerAnimals.isSaltWater();
+            soundMakerAnimals.bodyTemp();
+            soundMakerAnimals.swim();
+            soundMakerAnimals.makeSound();
+            System.out.println("\n");
+        }
     }
-    
 }

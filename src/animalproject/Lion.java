@@ -11,22 +11,28 @@ package animalproject;
  */
 public class Lion extends Mammal implements IWalk, ISwim, IMakeSound 
 {
+    private double bodyTemp;
+    
     public void name()
     {
         System.out.println("Tiny");
+    }
+    
+    public Lion (double bodyTemp)
+    {
+        this.bodyTemp = bodyTemp;
+    }
+    
+    public double bodyTemp()
+    {
+        System.out.println("My body temperature is " + bodyTemp + " degrees fahrenheit.");
+        return bodyTemp;
     }
 
     @Override
     public void walk()
     {
         System.out.println("I can walk.");
-    }
-    
-    @Override
-    public double bodyTemp()
-    {
-        System.out.println("My body temperature is " + 101.5 + " degrees fahrenheit.");
-        return 101.5;
     }
 
     @Override
