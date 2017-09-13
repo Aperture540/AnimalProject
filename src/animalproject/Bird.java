@@ -11,11 +11,6 @@ package animalproject;
  */
 public abstract class Bird extends Animal 
 {
-    /*public Bird() 
-    {
-        double wingspan; 
-    }*/
-    
     double wingspan;
     
     @Override

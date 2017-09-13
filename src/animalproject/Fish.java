@@ -11,9 +11,6 @@ package animalproject;
  */
 public abstract class Fish extends Animal 
 {
-    /*public Fish() {
-        String isSaltWater;
-    }*/
     boolean isSaltWater;
 
     @Override

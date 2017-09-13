@@ -11,11 +11,6 @@ package animalproject;
  */
 public abstract class Mammal extends Animal 
 {
-    /*public Mammal() 
-    {
-        double bodyTemp; 
-    }*/
-    
     double bodyTemp;
     
     @Override
